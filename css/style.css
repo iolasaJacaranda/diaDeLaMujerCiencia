@@ -1,0 +1,55 @@
+body {
+    background-color: #f3e5f5; /* Light purple background */
+    color: #4a148c; /* Deep purple text */
+}
+
+.navbar {
+    background-color: #6a1b9a; /* Strong purple */
+}
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+}
+h1, h2 {
+    color: #6a1b9a;
+}
+.lead {
+    color: #8e24aa;
+}
+a {
+    color: #4a148c;
+}
+a:hover {
+    color: #6a1b9a;
+}
+.carta {
+    width: 229px;
+    height: 341px;
+    background-color: #ffffff;
+    border: 2px solid #34495e;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+.carta.reverso {
+    background-image: url('../img/logo.png');
+}
+:root {
+   --colNum: 4; /* Número predeterminado de columnas */
+    --rowNum: auto;
+    --gridHeight: 229px; /* Alto de cada carta */
+    --gridWidht: 341px; /* Ancho de cada carta */
+}
+.mostrarCartas {
+    grid-area: baraja;
+    padding: 2%;
+
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(var(--rowNum), var(--gridHeight));
+    grid-template-columns: repeat(var(--colNum), var(--gridWidht));
+    gap: 20px;
+}

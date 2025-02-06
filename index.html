@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pon aquí el titulo que aparece en la pestaña del navegador</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://iesjacaranda.es/">
+                <img src="ponemos la ruta de la imagen" alt="IES Jacaranda" height="30" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Pagina web del Instituto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="boton-juego" class="nav-link" href="#juego">Jugar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="text-center">
+            <Bienvenida al Taller "Mujer en la Ciencia"
+            <p class="lead">Explora, aprende y diviértete con nuestro contenido interactivo.</p>
+        </div>
+
+        <!-- Placeholder Sections -->
+        <section id="inicio" class="mt-5">
+            <p>A lo largo de la historia, las mujeres han sido clave en el avance de la ciencia, aunque sus logros no siempre han recibido el reconocimiento merecido. Figuras como Marie Curie, Rosalind Franklin o Katherine Johnson rompieron barreras y sentaron precedentes que siguen inspirando hoy.
+               Actualmente, muchas mujeres lideran investigaciones en campos como la biotecnología, la inteligencia artificial o la sostenibilidad, pero sus aportaciones aún carecen de la visibilidad que merecen. Es fundamental reconocer su trabajo y promover la igualdad en la ciencia, no solo para hacer justicia, sino para enriquecer el conocimiento y motivar a las nuevas generaciones a perseguir sus sueños científicos.</p>
+        </section>
+
+        <section id="juego" class="mt-2">
+            <h2>Juego Interactivo</h2>
+            <p>Juego de pareja con mujeres ciéntificas.</p>
+        </section>
+        <div id="mostrar_cartas" class="mostrarCartas"></div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
