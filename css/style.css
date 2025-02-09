@@ -35,7 +35,7 @@ a:hover {
     background-position: center;
 }
 .carta.reverso {
-    background-image: url('../img/logo.png');
+    background-image: url('../img/reverso.png');
 }
 :root {
    --colNum: 4; /* Número predeterminado de columnas */
